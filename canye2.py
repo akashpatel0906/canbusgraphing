@@ -62,7 +62,7 @@ def parse_contents(contents, filename, date):
         html.H5(filename),
         dcc.Graph(
         id='example-graph',
-        figure=px.line(df, x = 'Timestamp', y = 'Value(DEC)', color='Name', title='CAN Data Values', render_mode="svg")
+        figure=px.line(df, x = 'Timestamp', y = 'Value(DEC)', color='Name', title='CANBus Data Values', render_mode="webgl")
 
     )
         
